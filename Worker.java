@@ -5,12 +5,12 @@
  */
 public class Worker extends Employee{
 
-    private Worker(String surName, String name, double salary) {
-        super(surName, name, salary);
+    private Worker(String surName, String name, double salary, int age) {
+        super(surName, name, salary, age);
     }
 
-    public static Worker create(String surName, String name, double salary){
-        return new Worker(surName, name, salary);
+    public static Worker create(String surName, String name, double salary, int age){
+        return new Worker(surName, name, salary, age);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class Worker extends Employee{
 
     @Override
     public String toString() {
-        return String.format("%s %s; ставка: %.2f руб.; заработная плата: %.2f руб.",
-                surName, name, salary, calculateSalary());
+        return String.format("%s %s; ставка: %.2f руб.; заработная плата: %.2f руб.; Возраст: %d; Работник.",
+                surName, name, salary, calculateSalary(),age);
     }
 }
