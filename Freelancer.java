@@ -19,4 +19,10 @@ public double calculateSalary() {
     return 20.8*8*salary;
 }
 
+@Override
+public String toString() {
+    return String.format("%s %s; ставка: %.2f руб.; заработная плата: %.2f руб.",
+            surName, name, salary, calculateSalary());
+}
+
 }

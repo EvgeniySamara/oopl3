@@ -1,5 +1,6 @@
 
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class EmployeeFabric {
@@ -41,7 +42,7 @@ public class EmployeeFabric {
 
 
   
-    public static Employee[] generateEmployees(int count,String EmpType){
+    public static ArrayList<Employee> generateEmployees(int count,String EmpType){
         
         // if (EmpType.toLowerCase()=="w")
         // {
@@ -51,12 +52,12 @@ public class EmployeeFabric {
         //      }
         // return (Employee[])workers;
         // // }
-        Employee[] employees = new Employee[count];
+        ArrayList<Employee> employees = new ArrayList<Employee>();
         if (EmpType.toLowerCase().equals("f")|EmpType.toLowerCase().equals("w"))
                  {
        
         for (int i = 0; i < count; i++){
-            employees[i] = generateEmployee(EmpType);
+            employees.add (generateEmployee(EmpType));
         }
     }
         // {

@@ -1,11 +1,16 @@
-import java.util.Arrays;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Program {
 
     public static void main(String[] args) {
 
-        Employee[] employees = EmployeeFabric.generateEmployees(5,"w");
-        for (Employee employee : employees) {
+       ArrayList<Employee> employees = EmployeeFabric.generateEmployees(5,"w");
+       employees.addAll(EmployeeFabric.generateEmployees(5,"f"));
+       
+       for (Employee employee : employees) {
             System.out.println(employee);
         }
 
