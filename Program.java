@@ -1,25 +1,23 @@
-package ru.geekbrains.oop.lesson3.task2;
-
 import java.util.Arrays;
 
 public class Program {
 
     public static void main(String[] args) {
 
-        Worker[] workers = EmployeeFabric.generateEmployees(15);
-        for (Worker worker : workers) {
-            System.out.println(worker);
+        Employee[] employees = EmployeeFabric.generateEmployees(5,"w");
+        for (Employee employee : employees) {
+            System.out.println(employee);
         }
 
         System.out.println();
         System.out.println("***");
         System.out.println();
 
-        Arrays.sort(workers);
+    //     Arrays.sort(workers);
 
-        for (Worker worker : workers) {
-            System.out.println(worker);
-        }
-    }
+    //     for (Worker worker : workers) {
+    //         System.out.println(worker);
+    //     }
+     }
 
 }

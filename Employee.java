@@ -1,4 +1,3 @@
-package ru.geekbrains.oop.lesson3.task2;
 
 public abstract class Employee implements Comparable<Employee> {
 

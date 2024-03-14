@@ -1,4 +1,3 @@
-package ru.geekbrains.oop.lesson3.task2;
 
 /**
  * Рабочий (работает с 9 до 18,
